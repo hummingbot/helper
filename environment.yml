@@ -1,0 +1,12 @@
+name: ai-assistant
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pydantic
+  - langchain
+  - openai
+  - jupyter
+  - pip
+  - pip:
+    - tiktoken
