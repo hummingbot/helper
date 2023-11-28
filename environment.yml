@@ -10,3 +10,6 @@ dependencies:
   - pip
   - pip:
     - tiktoken
+    - python-dotenv
+    - chromadb
+    - lark
