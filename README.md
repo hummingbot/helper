@@ -26,7 +26,7 @@ We warmly welcome contributions from the community! If you have ideas, code, bug
 To get started with this repository:
 
 1. Clone the repository to your local machine.
-2. Install the required dependencies listed in `requirements.txt`.
+2. Install the required dependencies listed in `environment.yml` by running `conda env create`.
 3. Explore the Jupyter notebooks to understand the current research and experiments.
 4. Feel free to modify, extend, and experiment with the notebooks and code.
 
