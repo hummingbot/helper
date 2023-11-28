@@ -8,15 +8,6 @@ Welcome to the Hummingbot LLM Research Notebooks repository! This repository is 
 
 Hummingbot is an open-source software that enables users to create and manage automated trading bots for cryptocurrency markets. As the complexity of trading strategies and the diversity of markets grow, the need for advanced, AI-driven assistance becomes increasingly essential. This repository serves as a collaborative platform for researchers, developers, and Hummingbot enthusiasts to contribute and benefit from the integration of LLMs with Hummingbot.
 
-## Repository Structure
-
-- **Notebooks**: Jupyter notebooks containing research, experiments, and demonstrations on how to use LLMs with Hummingbot. These notebooks cover a range of topics from basic preprocessing of data to advanced techniques in optimizing bot performance using LLM insights.
-- **Preprocessing Tools**: Scripts and modules developed for preprocessing data specific to cryptocurrency trading and Hummingbot's operational context. This includes data cleaning, normalization, and transformation scripts.
-- **LLM Chains**: Experimentation and implementation of LLM chains, which are sequences of models designed to handle specific tasks in the process of understanding and generating useful responses or actions within the Hummingbot ecosystem.
-- **Documentation**: Detailed explanations of the methodologies, algorithms, and code used in the notebooks. This section aims to assist users in understanding and potentially customizing the research for their specific needs.
-- **Examples**: Real-world examples and case studies demonstrating the application of LLMs in improving the Hummingbot user experience and bot performance.
-- **Resources**: A collection of resources, including links to relevant literature, tutorials, and external tools or libraries that are useful for working with LLMs and Hummingbot.
-
 ## Contributing
 
 We warmly welcome contributions from the community! If you have ideas, code, bug reports, or enhancements, please feel free to open an issue or submit a pull request. For detailed guidelines on how to contribute, please refer to our CONTRIBUTING.md file.
