@@ -7,9 +7,7 @@ dependencies:
   - langchain
   - openai
   - jupyter
-  - pip
-  - pip:
-    - tiktoken
-    - python-dotenv
-    - chromadb
-    - lark
+  - tiktoken
+  - python-dotenv
+  - chromadb
+  - lark
