@@ -1,7 +1,4 @@
 # ai-assistant
-This repo is intended to help users in the development of new strategies, explanations of the code and having a Smart Control of their account by using the Hummingbot AI Assistant
-# Hummingbot LLM Research Notebooks
-
 ## Overview
 
 Welcome to the Hummingbot LLM Research Notebooks repository! This repository is dedicated to exploring, testing, and refining the use of Large Language Models (LLMs) in enhancing the functionality and user experience of Hummingbot. Our primary focus is on developing preprocessing techniques and effective LLM chains to assist users in running bots and efficiently answering questions related to Hummingbot's documentation.
