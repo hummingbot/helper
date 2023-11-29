@@ -13,3 +13,5 @@ dependencies:
     - python-dotenv
     - chromadb
     - lark
+    - streamlit
+    - watchdog
