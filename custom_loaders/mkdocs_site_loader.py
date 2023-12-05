@@ -39,6 +39,7 @@ class MkDocsSiteLoader(BaseLoader):
         self.sections_filter = sections_filter
         self.processed_data = []  # Global list to store results
         self.metadata_filter = metadata_filter or []
+
     async def aget_html(self, url, client):
         response = await client.get(url)
         response.raise_for_status()
@@ -111,7 +112,7 @@ class MkDocsSiteLoader(BaseLoader):
             # Process subpaths
             for subpath in related_paths:
                 next_url = self.normalize_path(url, subpath)
-                # Re evaluate this variable for the async tasks
+                # Re-evaluate this variable to catch updates from different tasks
                 processed_urls = [data.get("metadata").get("url") for data in self.processed_data]
                 if next_url not in processed_urls and (self.sections_filter and not any(section in next_url
                                                                                         for section in
@@ -175,13 +176,13 @@ class MkDocsSiteLoader(BaseLoader):
         async with httpx.AsyncClient() as client:
             await self.arecursive_load_site(base_url=self.site_url, path="/", lock=lock, client=client)
         return [Document(page_content=doc["page_content"],
-                         metadata={key: value for key, value in doc["metadata"].items() if key not in self.metadata_filter}
+                         metadata={key: value for key, value in doc["metadata"].items() if
+                                   key not in self.metadata_filter}
                          ) for doc in self.processed_data]
 
     def load(self):
         with httpx.Client() as client:
             self.recursive_load_site(base_url=self.site_url, path="/", client=client)
-        # return [Document(page_content=doc["page_content"], metadata=doc["metadata"]) for doc in self.processed_data]
         return [Document(page_content=doc["page_content"],
                          metadata={key: value for key, value in doc["metadata"].items() if
                                    key not in self.metadata_filter}
