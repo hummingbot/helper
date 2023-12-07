@@ -1,3 +1,5 @@
+import os
+
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
 from dotenv import load_dotenv
@@ -15,7 +17,7 @@ st.title("🚀 Hummingbot AI Assistant")
 openai_model = st.sidebar.selectbox("Select a model", ["gpt-3.5-turbo", "gpt-3.5", "gpt-4"], index=2)
 
 # Replace with persist_directory location from 01_load_hummingbot_docs.ipnynb
-persist_directory = "/Users/feng/Code/ai-assistant/vector_stores"
+persist_directory = os.environ.get("PERSIST_DIRECTORY", "/tmp")
 
 embedding = OpenAIEmbeddings()
 vectordb = Chroma(
