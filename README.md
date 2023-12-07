@@ -45,11 +45,13 @@ Activate the created conda environment:
 conda activate hummingbot-helper
 ```
 
-* Open the `.env` file in a text editor and replace `placeholder` variables:
+* Open the `.env` file in a text editor and replace the `placeholder` variables:
 ```bash
-OPENAI_API_KEY=placeholder # replace with your OpenAPI key: sk-123...
+OPENAI_API_KEY=placeholder # replace with your OpenAI API key: sk-123...
 PERSIST_DIRECTORY=placeholder # replace with the location where you want to save the vector database: /Users/your_name/helper/vector_stores
 ```
+
+You can get an OpenAI API key for free at https://platform.openai.com.
 
 ## Explore the notebooks
 
