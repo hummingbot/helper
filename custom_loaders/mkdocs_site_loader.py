@@ -4,7 +4,6 @@ from urllib.parse import urlparse, urljoin
 
 import httpx
 from bs4 import BeautifulSoup
-from markdownify import markdownify as md
 from langchain.document_loaders.base import BaseLoader
 from langchain.schema import Document
 
