@@ -1,4 +1,4 @@
-name: ai-assistant
+name: hummingbot-helper
 channels:
   - conda-forge
 dependencies:

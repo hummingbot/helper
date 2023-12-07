@@ -11,7 +11,7 @@ from langchain.vectorstores.chroma import Chroma
 
 load_dotenv()
 
-st.title("🚀 Hummingbot AI Assistant")
+st.title("🧢 Hummingbot Helper")
 
 # Set OpenAI API key from Streamlit secrets
 openai_model = st.sidebar.selectbox("Select a model", ["gpt-3.5-turbo", "gpt-3.5", "gpt-4"], index=2)
