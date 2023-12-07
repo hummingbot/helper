@@ -13,3 +13,8 @@ dependencies:
     - python-dotenv
     - chromadb
     - lark
+    - streamlit
+    - watchdog
+    - httpx
+    - bs4
+    - markdownify
